@@ -1,0 +1,13 @@
+GRADIENT DESCENT RESULTS
+=======================
+
+Initial Weight       : 10.0
+Learning Rate        : 0.001
+Number of Iterations : 1000
+
+--------------------------------
+Final Weight         : 2065.496104
+Final MSE            : 24416454.824416
+
+Closed-Form Solution : 2065.496104
+Difference           : 0.000000

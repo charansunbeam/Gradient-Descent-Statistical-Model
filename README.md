@@ -46,7 +46,27 @@ The project contains graphs representing different aspects of the data:
 4. Unemployment
 5. Literacy Rate
 
-The graphs are stored in the `images` folder.
+All graphs are stored in the `graphs` folder.
+
+### State-wise Data Analysis
+
+![State-wise Data Analysis](graphs/data_by_state.png)
+
+### Population and Growth Rate
+
+![Population](graphs/population.png)
+
+### Economy
+
+![Economy](graphs/economy.png)
+
+### Unemployment
+
+![Unemployment](graphs/unemployment.png)
+
+### Literacy Rate
+
+![Literacy Rate](graphs/literacy_rate.png)
 
 ## Methodology
 
@@ -83,7 +103,32 @@ The gradient is calculated from the prediction error and input variable.
 
 The gradient descent algorithm is applied iteratively to reduce the error between the predicted and observed values.
 
-The final estimated weight is compared with the analytical closed-form solution to examine the optimization result.
+The final estimated weight is compared with the analytical closed-form solution.
+
+### Result Files
+
+The detailed results are available in the `Results` folder.
+
+- `gradient_descent_results.txt` – Summary of the gradient descent results
+- `results.csv` – Iteration-wise results including weight, MSE, and gradient
+- `final_result.png` – Gradient descent convergence graph
+
+### Gradient Descent Convergence
+
+![Gradient Descent Convergence](Results/final_result.png)
+
+### Numerical Results
+
+The model uses the following parameters:
+
+| Parameter | Value |
+|---|---:|
+| Initial Weight | 10.0 |
+| Learning Rate | 0.001 |
+| Number of Iterations | 1000 |
+| Closed-Form Solution | 2065.4961 |
+
+The final gradient descent value and MSE are provided in the `Results` folder.
 
 ## Technologies Used
 
@@ -98,8 +143,6 @@ The final estimated weight is compared with the analytical closed-form solution 
 ```text
 Gradient-Descent-Statistical-Model/
 │
-├── Gradient-Descent-Statistical-Model.py
-│
 ├── Data/
 │   ├── table-6-2_2010.xlsx
 │   ├── table-6-2_2011.xlsx
@@ -107,7 +150,14 @@ Gradient-Descent-Statistical-Model/
 │   ├── ...
 │   └── table-6-2_2021.xlsx
 │
-├── images/
+├── Gradient-Descent-Statistical-Model.py
+│
+├── Results/
+│   ├── gradient_descent_results.txt
+│   ├── results.csv
+│   └── final_result.png
+│
+├── graphs/
 │   ├── data_by_state.png
 │   ├── population.png
 │   ├── economy.png
